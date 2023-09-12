@@ -31,11 +31,14 @@ a {
 }
 table {
   border-collapse: separate;
-  border-spacing: 0 9px; /* Ajusta el valor según el espacio que desees entre las filas */
+  border-spacing: 0 9px;
 }
 .ID .Accion {
   display: flex;
   align-items: center;
   text-align: center;
   
+}
+.card-container {
+  background-image: url('/path-to-tu-gif.gif');
 }

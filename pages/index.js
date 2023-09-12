@@ -1,11 +1,18 @@
 import React from 'react';
 import Post from '../components/Post';
+import Link from 'next/link';
 
 export default function Home({ posts }) {
   return (
     <div className="flex justify-center items-center">
       <div className="bg-white p-6 rounded-lg shadow-lg lg:w-9/12 m-2">
         <h1 className="text-4xl font-bold mb-4">Lista de Posts</h1>
+        <Link href="/miDedicacion">
+          <button className="fixed bottom-0 left-0 p-4 text-white bg-blue-500 rounded-tl-lg">
+            Ver Mi Dedicación
+          </button>
+        </Link>
+
         <div className="overflow-x-auto">
           <table className="min-w-full bg-white border border-gray-300">
             <thead>
